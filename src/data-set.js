@@ -21,15 +21,15 @@ const flourQuizData={
 
 const flourData = {
   slides: [
-    { question: "do you like flour?",
+    { question: "I am looking for:",
       answers: [
-        { text: "Yes, I do like flour",
+        { text: "Organic Flour",
           image: "https://upload.wikimedia.org/wikipedia/commons/2/26/Atta_flour.jpg",
-          value: 4 },
-        { text: "NO, I fucking hate flour",
+          value: 'organic' },
+        { text: "Conventional Flour",
           image: "https://i.pinimg.com/originals/f1/92/cf/f192cf117668b852f2301bed6dfcb909.jpg",
-          value: 0 }]},
-    { question: "do you like Grains?",
+          value: 'conventional' }]},
+    { question: "I am a:",
       answers: [
         { text: "Yes, I do like grains",
           image: "https://upload.wikimedia.org/wikipedia/commons/2/26/Atta_flour.jpg",
@@ -45,6 +45,9 @@ const flourData = {
         { text: "NO, I fucking hate mixes",
           image: "https://i.pinimg.com/originals/f1/92/cf/f192cf117668b852f2301bed6dfcb909.jpg",
           value: 0 }]}
+  ],
+  products:[
+    {}
   ]
 }
 

@@ -8,7 +8,7 @@ class QuizContainer extends Component {
     super()
 
     this.state = {
-      currentScore: 0
+      selections: 0
     }
   }
 
@@ -22,7 +22,7 @@ class QuizContainer extends Component {
     console.log('test');
   }
 
-  adjustScore = () => {
+  stashSelection = () => {
     console.log('good test');
   }
 
@@ -32,7 +32,7 @@ class QuizContainer extends Component {
       <button onClick={ this.testFunc }>Test FUNK</button>
       <Quiz 
         slides={ flourData.slides }
-        adjustScore={ this.adjustScore }
+        stashSelection={ this.stashSelection }
       />
     </div>
     )
