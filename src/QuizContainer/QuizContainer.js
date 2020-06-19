@@ -8,7 +8,7 @@ class QuizContainer extends Component {
     super()
 
     this.state = {
-      selections: 0
+      selections: {}
     }
   }
 
@@ -22,8 +22,10 @@ class QuizContainer extends Component {
     console.log('test');
   }
 
-  stashSelection = () => {
-    console.log('good test');
+  stashSelection = (paramTest) => {
+    let { name, value } = paramTest
+    let selections = {...this.state.selections, [name]: value}
+    this.setState({ selections })
   }
 
   render() {

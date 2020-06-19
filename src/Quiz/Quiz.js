@@ -41,9 +41,9 @@ class Quiz extends Component {
 
   handleAnswer = (event) => {
     // event.preventDefault();
-    let { name, value } = event.currentTarget
-    console.log('testParam', name, value)
-    this.props.stashSelection(event.currentTarget.value)
+    // let { name, value } = event.currentTarget
+    // console.log('testParam', name, value)
+    this.props.stashSelection(event.currentTarget)
     // this.displaySlide()
     // this.props.adjustScore()
     // this.setState({ test: 'junior flour miller'})
