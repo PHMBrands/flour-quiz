@@ -43,10 +43,15 @@ button {
   justify-content: center;
 }
 
+.quiz-section {
+  display: flex;
+  justify-content: center;
+}
+
 .product-box {
   border: 1px solid black;
   width: 400px;
-  height: 400px;
+  height: 200px;
 }
 
 
