@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-// import flourData from '../data-set';
+import flourData from '../data-set';
 
 class Quiz extends Component {
   constructor() {
@@ -8,7 +8,7 @@ class Quiz extends Component {
     this.state = {
       currentSlide: undefined,
       remainingSlides: [],
-      test: 'still learning'
+      display: 'first'
     }
   }
 
@@ -49,6 +49,25 @@ class Quiz extends Component {
     // this.setState({ test: 'junior flour miller'})
   }
 
+  renderButtons = (slideState) => {
+    let slideOne = flourData.slides[0]
+
+    switch (slideState) {
+      case 'first':
+        return <div>
+          <h3>{ slideOne.question }</h3>
+          {/* <button onClick={ this.handleAnswer } name={'test name'} value={ slide.answers[0].value }>
+            <p value="text">{ slide.answers[0].text }</p>
+          </button>
+          <button onClick={ this.handleAnswer } value={ slide.answers[1].value }>
+            <p>{ slide.answers[1].text }</p>
+          </button> */}
+        </div>
+      default:
+        return <div>Hi mom!</div>
+    }
+  }
+
   render() {
 
     let slide = this.state.currentSlide
@@ -71,9 +90,9 @@ class Quiz extends Component {
     }
 
     return (
-      <div>
-        { slideSpace }
-      </div>) 
+      <section>
+        { this.renderButtons(this.state.display) }
+      </section>) 
   }
 }
 
