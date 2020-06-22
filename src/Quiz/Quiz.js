@@ -62,13 +62,13 @@ class Quiz extends Component {
 
   handleSecondButton = (event) => {
     if (event.currentTarget.value === 'home') {
-      this.setState({ user: event.currentTarget.value, display: 'third' })
+      this.setState({ user: 'retail', display: 'third' })
     } else if (event.currentTarget.value === 'restaurant') {
-      this.setState({ user: event.currentTarget.value, display: 'third' })
+      this.setState({ user: 'wholesale', display: 'third' })
     } else if (event.currentTarget.value === 'retail') {
-      this.setState({ user: event.currentTarget.value, display: 'third' })
+      this.setState({ user: 'wholesale', display: 'third' })
     } else {
-      this.setState({ user: event.currentTarget.value, display: 'third' })
+      this.setState({ user: 'wholesale', display: 'third' })
     }
   }
 
@@ -141,9 +141,26 @@ class Quiz extends Component {
     }
   }
 
-  
+  // organicOrConventional = () => {
+  //   // if ()
+  // }
+
+  renderOrganicProducts = (slideState) => {
+    switch (slideState) {
+      case '':
+        
+        break;
+    
+      default:
+        return <div>You weren't suppposed to see this.</div>
+    }
+  }
 
   render() {
+
+    let productRender 
+
+    if (this.state.)
 
     // let slide = this.state.currentSlide
     // let slideSpace

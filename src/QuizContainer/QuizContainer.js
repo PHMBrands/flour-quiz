@@ -12,16 +12,6 @@ class QuizContainer extends Component {
     }
   }
 
-  // componentDidMount = () => {
-  //   let randomizedSlides = this.shuffle(flourData.slides)
-  //   this.setState({ randomizedSlides })
-  // }
-
-  testFunc = () => {
-
-    console.log('test');
-  }
-
   stashSelection = (paramTest) => {
     let { name, value } = paramTest
     let selections = {...this.state.selections, [name]: value}
@@ -31,7 +21,6 @@ class QuizContainer extends Component {
   render() {
     return (
     <div>
-      <button onClick={ this.testFunc }>Test FUNK</button>
       <Quiz 
         slides={ flourData.slides }
         stashSelection={ this.stashSelection }
