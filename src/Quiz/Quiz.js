@@ -10,7 +10,9 @@ class Quiz extends Component {
       remainingSlides: [],
       display: 'first',
       organic: undefined,
-      user: undefined
+      user: undefined,
+      displayProduct: false,
+      product: ''
     }
   }
 
@@ -73,6 +75,7 @@ class Quiz extends Component {
   }
 
   handleThirdButton = (event) => {
+    this.setState({ displayProduct: true, display: 'disappear', product: event.currentTarget.value})
 
     console.log('test')
     // if (event.currentTarget.value === 'home') {
@@ -136,6 +139,8 @@ class Quiz extends Component {
             <p>Healthy-ish Pastries</p>
           </button>
         </div>
+      case 'disappear':
+        return null
       default:
         return <div>Hi mom!</div>
     }
@@ -145,22 +150,231 @@ class Quiz extends Component {
   //   // if ()
   // }
 
-  renderOrganicProducts = (slideState) => {
-    switch (slideState) {
-      case '':
-        
-        break;
-    
+  renderOrganicRetail = () => {
+    switch (this.state.product) {
+      case 'cookies':
+        return <div className="product-box">
+            <p>Organic All Purpose Flour</p>
+            <p>about</p>
+            <button>BUY NOW</button>
+          </div>
+
+      case 'bread':
+        return <div className="product-box">
+            <p>Organic Bread Flour</p>
+            <p>about</p>
+            <button>BUY NOW</button>
+          </div>
+
+          
+      case 'hard rolls':
+        return <div className="product-box">
+            <p>Organic High Gluten Flour</p>
+            <p>about</p>
+            <button>BUY NOW</button>
+          </div>        
+            
+      case 'pastries':
+        return <div className="product-box">
+            <p>Organic Baker's Patent</p>
+            <p>about</p>
+            <button>BUY NOW</button>
+          </div>        
+
+      case 'pizza':
+        return <div className="product-box">
+            <p>Organic High Gluten</p>
+            <p>about</p>
+            <button>BUY NOW</button>
+          </div>        
+
+      case 'healthy pastries':
+        return <div className="product-box">
+            <p>Organic Whole Wheat</p>
+            <p>about</p>
+            <button>BUY NOW</button>
+          </div>        
+
       default:
-        return <div>You weren't suppposed to see this.</div>
+        return <div></div>
     }
   }
+
+  renderConventionalRetail = () => {
+    switch (this.state.product) {
+      case 'cookies':
+        return <div>
+            <p>Organic All Purpose Flour</p>
+            <p>about</p>
+            <button>BUY NOW</button>
+          </div>
+
+      case 'bread':
+        return <div>
+            <p>Organic Bread Flour</p>
+            <p>about</p>
+            <button>BUY NOW</button>
+          </div>
+
+          
+      case 'hard rolls':
+        return <div>
+            <p>Organic High Gluten Flour</p>
+            <p>about</p>
+            <button>BUY NOW</button>
+          </div>        
+            
+      case 'pastries':
+        return <div>
+            <p>Organic Baker's Patent</p>
+            <p>about</p>
+            <button>BUY NOW</button>
+          </div>        
+
+      case 'pizza':
+        return <div>
+            <p>Organic High Gluten</p>
+            <p>about</p>
+            <button>BUY NOW</button>
+          </div>        
+
+      case 'healthy pastries':
+        return <div>
+            <p>Organic Whole Wheat</p>
+            <p>about</p>
+            <button>BUY NOW</button>
+          </div>        
+
+      default:
+        return <div></div>
+    }
+  }
+
+  renderOrganicWholesale = () => {
+    switch (this.state.product) {
+      case 'cookies':
+        return <div>
+            <p>Organic All Purpose Flour</p>
+            <p>about</p>
+            <button>BUY NOW</button>
+          </div>
+
+      case 'bread':
+        return <div>
+            <p>Organic Bread Flour</p>
+            <p>about</p>
+            <button>BUY NOW</button>
+          </div>
+
+          
+      case 'hard rolls':
+        return <div>
+            <p>Organic High Gluten Flour</p>
+            <p>about</p>
+            <button>BUY NOW</button>
+          </div>        
+            
+      case 'pastries':
+        return <div>
+            <p>Organic Baker's Patent</p>
+            <p>about</p>
+            <button>BUY NOW</button>
+          </div>        
+
+      case 'pizza':
+        return <div>
+            <p>Organic High Gluten</p>
+            <p>about</p>
+            <button>BUY NOW</button>
+          </div>        
+
+      case 'healthy pastries':
+        return <div>
+            <p>Organic Whole Wheat</p>
+            <p>about</p>
+            <button>BUY NOW</button>
+          </div>        
+
+      default:
+        return <div></div>
+    }
+  }
+
+  renderConventionalWholesale = () => {
+    switch (this.state.product) {
+      case 'cookies':
+        return <div>
+            <p>Organic All Purpose Flour</p>
+            <p>about</p>
+            <button>BUY NOW</button>
+          </div>
+
+      case 'bread':
+        return <div>
+            <p>Organic Bread Flour</p>
+            <p>about</p>
+            <button>BUY NOW</button>
+          </div>
+
+          
+      case 'hard rolls':
+        return <div>
+            <p>Organic High Gluten Flour</p>
+            <p>about</p>
+            <button>BUY NOW</button>
+          </div>        
+            
+      case 'pastries':
+        return <div>
+            <p>Organic Baker's Patent</p>
+            <p>about</p>
+            <button>BUY NOW</button>
+          </div>        
+
+      case 'pizza':
+        return <div>
+            <p>Organic High Gluten</p>
+            <p>about</p>
+            <button>BUY NOW</button>
+          </div>        
+
+      case 'healthy pastries':
+        return <div>
+            <p>Organic Whole Wheat</p>
+            <p>about</p>
+            <button>BUY NOW</button>
+          </div>        
+
+      default:
+        return <div></div>
+    }
+  }
+
+  renderProductHelper = () => {
+    if (this.state.organic && this.state.user === 'retail') {
+      return this.renderOrganicRetail()
+    } else if (!this.state.organic && this.state.user === 'retail') {
+      return this.renderConventionalRetail()
+    } else if (this.state.organic && this.state.user === 'wholesale') {
+      return this.renderOrganicWholesale()
+    } else if (!this.state.organic && this.state.user === 'wholesale') {
+      return this.renderConventionalWholesale()
+    } else {
+      return null
+    }
+  }
+
 
   render() {
 
     let productRender 
 
-    if (this.state.)
+    if (this.state.displayProduct) {
+      productRender = this.renderProductHelper()
+    } else {
+      productRender = null
+    }
+
 
     // let slide = this.state.currentSlide
     // let slideSpace
@@ -184,7 +398,7 @@ class Quiz extends Component {
     return (
       <section>
         { this.renderButtons(this.state.display) }
-        { this.renderProduct() }
+        { productRender }
       </section>) 
   }
 }
