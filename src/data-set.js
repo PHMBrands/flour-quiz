@@ -21,30 +21,51 @@ const flourQuizData={
 
 const flourData = {
   slides: [
-    { question: "do you like flour?",
+    { question: "I am looking for:",
       answers: [
-        { text: "Yes, I do like flour",
+        { text: "Organic Flour",
+          image: "https://upload.wikimedia.org/wikipedia/commons/2/26/Atta_flour.jpg",
+          value: 'organic' },
+        { text: "Conventional Flour",
+          image: "https://i.pinimg.com/originals/f1/92/cf/f192cf117668b852f2301bed6dfcb909.jpg",
+          value: 'conventional' }]},
+    { question: "I am a:",
+      answers: [
+        { text: "Home Baker",
           image: "https://upload.wikimedia.org/wikipedia/commons/2/26/Atta_flour.jpg",
           value: 4 },
-        { text: "NO, I fucking hate flour",
+        { text: "Restaurant",
           image: "https://i.pinimg.com/originals/f1/92/cf/f192cf117668b852f2301bed6dfcb909.jpg",
-          value: 0 }]},
-    { question: "do you like Grains?",
-      answers: [
-        { text: "Yes, I do like grains",
+          value: 0 },
+        { text: "Retail Bakery",
           image: "https://upload.wikimedia.org/wikipedia/commons/2/26/Atta_flour.jpg",
           value: 4 },
-        { text: "NO, I fucking hate grains",
-          image: "https://i.pinimg.com/originals/f1/92/cf/f192cf117668b852f2301bed6dfcb909.jpg",
-          value: 0 }]},
-    { question: "do you like Mixes?",
+        { text: "Commercial Bakery",
+          image: "https://upload.wikimedia.org/wikipedia/commons/2/26/Atta_flour.jpg",
+          value: 4 }]},
+    { question: "I am baking:",
       answers: [
-        { text: "Yes, I do like mixes",
+        { text: "Cookies",
           image: "https://upload.wikimedia.org/wikipedia/commons/2/26/Atta_flour.jpg",
           value: 4 },
-        { text: "NO, I fucking hate mixes",
+        { text: "Bread",
           image: "https://i.pinimg.com/originals/f1/92/cf/f192cf117668b852f2301bed6dfcb909.jpg",
-          value: 0 }]}
+          value: 0 },
+        { text: "Hard Rolls",
+          image: "https://upload.wikimedia.org/wikipedia/commons/2/26/Atta_flour.jpg",
+          value: 4 },
+        { text: "Pastries",
+          image: "https://upload.wikimedia.org/wikipedia/commons/2/26/Atta_flour.jpg",
+          value: 4 },
+        { text: "Pizza",
+          image: "https://upload.wikimedia.org/wikipedia/commons/2/26/Atta_flour.jpg",
+          value: 4 },
+        { text: "Healthy-ish pastries",
+          image: "https://upload.wikimedia.org/wikipedia/commons/2/26/Atta_flour.jpg",
+          value: 4 }]}
+  ],
+  products:[
+    {}
   ]
 }
 
