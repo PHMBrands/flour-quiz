@@ -317,19 +317,33 @@ class Quiz extends Component {
     }
   }
 
+  startOver = () => {
+    this.setState({
+      display: 'first',
+      organic: undefined,
+      user: undefined,
+      displayProduct: false,
+      product: ''
+    })
+  }
+
   render() {
     let productRender 
+    let backButton
 
     if (this.state.displayProduct) {
       productRender = this.renderProductHelper()
+      backButton = <button onClick={ this.startOver } className="test-button">Start Over</button>
     } else {
       productRender = null
+      backButton = null
     }
 
     return (
       <section className="quiz-section">
         { this.renderButtons(this.state.display) }
         { productRender }
+        { backButton }
       </section>) 
   }
 }
