@@ -107,16 +107,17 @@ class Quiz extends Component {
     switch (this.state.product) {
       case 'cookies':
         return <div className="product-box">
+            <img className="product-photo" src="https://i.pinimg.com/originals/f1/92/cf/f192cf117668b852f2301bed6dfcb909.jpg" />
             <p>Organic All Purpose Flour</p>
             <p>about</p>
-            <button>BUY NOW</button>
+            <button className="buy-button">BUY NOW</button>
           </div>
 
       case 'bread':
         return <div className="product-box">
             <p>Organic Bread Flour</p>
             <p>about</p>
-            <button>BUY NOW</button>
+            <button className="buy-button">BUY NOW</button>
           </div>
 
           
@@ -124,28 +125,28 @@ class Quiz extends Component {
         return <div className="product-box">
             <p>Organic High Gluten Flour</p>
             <p>about</p>
-            <button>BUY NOW</button>
+            <button className="buy-button">BUY NOW</button>
           </div>        
             
       case 'pastries':
         return <div className="product-box">
             <p>Organic Baker's Patent</p>
             <p>about</p>
-            <button>BUY NOW</button>
+            <button className="buy-button">BUY NOW</button>
           </div>        
 
       case 'pizza':
         return <div className="product-box">
             <p>Organic High Gluten</p>
             <p>about</p>
-            <button>BUY NOW</button>
+            <button> className="buy-button"BUY NOW</button>
           </div>        
 
       case 'healthy pastries':
         return <div className="product-box">
             <p>Organic Whole Wheat</p>
             <p>about</p>
-            <button>BUY NOW</button>
+            <button className="buy-button">BUY NOW</button>
           </div>        
 
       default:
@@ -159,14 +160,14 @@ class Quiz extends Component {
         return <div>
             <p>Organic All Purpose Flour</p>
             <p>about</p>
-            <button>BUY NOW</button>
+            <button className="buy-button">BUY NOW</button>
           </div>
 
       case 'bread':
         return <div>
             <p>Organic Bread Flour</p>
             <p>about</p>
-            <button>BUY NOW</button>
+            <button className="buy-button">BUY NOW</button>
           </div>
 
           
@@ -174,28 +175,28 @@ class Quiz extends Component {
         return <div>
             <p>Organic High Gluten Flour</p>
             <p>about</p>
-            <button>BUY NOW</button>
+            <button className="buy-button">BUY NOW</button>
           </div>        
             
       case 'pastries':
         return <div>
             <p>Organic Baker's Patent</p>
             <p>about</p>
-            <button>BUY NOW</button>
+            <button className="buy-button">BUY NOW</button>
           </div>        
 
       case 'pizza':
         return <div>
             <p>Organic High Gluten</p>
             <p>about</p>
-            <button>BUY NOW</button>
+            <button className="buy-button">BUY NOW</button>
           </div>        
 
       case 'healthy pastries':
         return <div>
             <p>Organic Whole Wheat</p>
             <p>about</p>
-            <button>BUY NOW</button>
+            <button className="buy-button">BUY NOW</button>
           </div>        
 
       default:
@@ -209,14 +210,14 @@ class Quiz extends Component {
         return <div>
             <p>Organic All Purpose Flour</p>
             <p>about</p>
-            <button>BUY NOW</button>
+            <button className="buy-button">BUY NOW</button>
           </div>
 
       case 'bread':
         return <div>
             <p>Organic Bread Flour</p>
             <p>about</p>
-            <button>BUY NOW</button>
+            <button className="buy-button">BUY NOW</button>
           </div>
 
           
@@ -224,28 +225,28 @@ class Quiz extends Component {
         return <div>
             <p>Organic High Gluten Flour</p>
             <p>about</p>
-            <button>BUY NOW</button>
+            <button className="buy-button">BUY NOW</button>
           </div>        
             
       case 'pastries':
         return <div>
             <p>Organic Baker's Patent</p>
             <p>about</p>
-            <button>BUY NOW</button>
+            <button className="buy-button">BUY NOW</button>
           </div>        
 
       case 'pizza':
         return <div>
             <p>Organic High Gluten</p>
             <p>about</p>
-            <button>BUY NOW</button>
+            <button className="buy-button">BUY NOW</button>
           </div>        
 
       case 'healthy pastries':
         return <div>
             <p>Organic Whole Wheat</p>
             <p>about</p>
-            <button>BUY NOW</button>
+            <button className="buy-button">BUY NOW</button>
           </div>        
 
       default:
@@ -259,14 +260,14 @@ class Quiz extends Component {
         return <div>
             <p>Organic All Purpose Flour</p>
             <p>about</p>
-            <button>BUY NOW</button>
+            <button className="buy-button">BUY NOW</button>
           </div>
 
       case 'bread':
         return <div>
             <p>Organic Bread Flour</p>
             <p>about</p>
-            <button>BUY NOW</button>
+            <button className="buy-button">BUY NOW</button>
           </div>
 
           
@@ -274,28 +275,28 @@ class Quiz extends Component {
         return <div>
             <p>Organic High Gluten Flour</p>
             <p>about</p>
-            <button>BUY NOW</button>
+            <button className="buy-button">BUY NOW</button>
           </div>        
             
       case 'pastries':
         return <div>
             <p>Organic Baker's Patent</p>
             <p>about</p>
-            <button>BUY NOW</button>
+            <button className="buy-button">BUY NOW</button>
           </div>        
 
       case 'pizza':
         return <div>
             <p>Organic High Gluten</p>
             <p>about</p>
-            <button>BUY NOW</button>
+            <button className="buy-button">BUY NOW</button>
           </div>        
 
       case 'healthy pastries':
         return <div>
             <p>Organic Whole Wheat</p>
             <p>about</p>
-            <button>BUY NOW</button>
+            <button className="buy-button">BUY NOW</button>
           </div>        
 
       default:
@@ -332,8 +333,8 @@ class Quiz extends Component {
     let backButton
 
     if (this.state.displayProduct) {
-      productRender = this.renderProductHelper()
-      backButton = <button onClick={ this.startOver } className="test-button">Start Over</button>
+      productRender = <div><h3>We recommend: </h3>{ this.renderProductHelper() }</div>
+      backButton = <button onClick={ this.startOver } className="start-over-button">Start Over</button>
     } else {
       productRender = null
       backButton = null
