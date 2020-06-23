@@ -45,50 +45,56 @@ class Quiz extends Component {
       case 'first':
         return <div>
           <h3>I am looking for:</h3>
-          <button onClick={ this.handleFirstButton } value="organic">
-            <p>Organic Flour</p>
-          </button>
-          <button onClick={ this.handleFirstButton } value="conventional">
-            <p>Conventional Flour</p>
-          </button>
+          <div className="button-section">
+            <button onClick={ this.handleFirstButton } className="test-button" value="organic">
+              <p>Organic Flour</p>
+            </button>
+            <button onClick={ this.handleFirstButton } className="test-button" value="conventional">
+              <p>Conventional Flour</p>
+            </button>
+          </div>  
         </div>
       case 'second':
         return <div>
           <h3>I am a: </h3>
-          <button onClick={ this.handleSecondButton } value="home">
-            <p>Home Baker</p>
-          </button>
-          <button onClick={ this.handleSecondButton } value="restaurant">
-            <p>Restaurant</p>
-          </button>
-          <button onClick={ this.handleSecondButton } value="retail">
-            <p>Retail Bakery</p>
-          </button>
-          <button onClick={ this.handleSecondButton } value="commercial">
-            <p>Commercial Bakery</p>
-          </button>
+          <div className="button-section">
+            <button onClick={ this.handleSecondButton } className="test-button" value="home">
+              <p>Home Baker</p>
+            </button>
+            <button onClick={ this.handleSecondButton } className="test-button" value="restaurant">
+              <p>Restaurant</p>
+            </button>
+            <button onClick={ this.handleSecondButton } className="test-button" value="retail">
+              <p>Retail Bakery</p>
+            </button>
+            <button onClick={ this.handleSecondButton } className="test-button" value="commercial">
+              <p>Commercial Bakery</p>
+            </button>
+          </div>
         </div>
       case 'third':
         return <div>
           <h3>I am baking: </h3>
-          <button onClick={ this.handleThirdButton } value="cookies">
-            <p>Cookies</p>
-          </button>
-          <button onClick={ this.handleThirdButton } value="bread">
-            <p>Bread</p>
-          </button>
-          <button onClick={ this.handleThirdButton } value="hard rolls">
-            <p>Hard Rolls</p>
-          </button>
-          <button onClick={ this.handleThirdButton } value="pastries">
-            <p>Pastries</p>
-          </button>
-          <button onClick={ this.handleThirdButton } value="pizza">
-            <p>Pizza</p>
-          </button>
-          <button onClick={ this.handleThirdButton } value="healthy pastries">
-            <p>Healthy-ish Pastries</p>
-          </button>
+          <div className="button-section">
+            <button onClick={ this.handleThirdButton } className="test-button" value="cookies">
+              <p>Cookies</p>
+            </button>
+            <button onClick={ this.handleThirdButton } className="test-button" value="bread">
+              <p>Bread</p>
+            </button>
+            <button onClick={ this.handleThirdButton } className="test-button" value="hard rolls">
+              <p>Hard Rolls</p>
+            </button>
+            <button onClick={ this.handleThirdButton } className="test-button" value="pastries">
+              <p>Pastries</p>
+            </button>
+            <button onClick={ this.handleThirdButton } className="test-button" value="pizza">
+              <p>Pizza</p>
+            </button>
+            <button onClick={ this.handleThirdButton } className="test-button" value="healthy pastries">
+              <p>Healthy-ish Pastries</p>
+            </button>
+          </div>    
         </div>
       case 'disappear':
         return null
